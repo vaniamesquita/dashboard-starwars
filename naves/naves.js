@@ -11,7 +11,6 @@ function swapiGet(param) {
 preencherContadores();
 preencherTabelaNaves();
 
-
 //promises: varias requisiçoes ao mesmo tempo, esperar todas para mostrar o resultado
 function preencherContadores() {
   // personagensContador.innerHTML = swapiGet('people/')
@@ -29,7 +28,6 @@ function preencherContadores() {
     navesContador.innerHTML = results[3].data.count;
   });
 }
-
 
 //async await: so uma requisiçao - PERSONAGENS
 async function preencherTabelaNaves() {
@@ -50,7 +48,4 @@ async function preencherTabelaNaves() {
   });
 }
 
-
 //naves
-
-

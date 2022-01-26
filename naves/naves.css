@@ -137,8 +137,8 @@ a {
     content: " ";
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     background-image: url("/assets/banner-personagens.jpeg");
     background-size: cover;
@@ -152,6 +152,7 @@ a {
   .menu-items {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .menu-items ul {
@@ -180,21 +181,27 @@ a {
   }
 
   .menu-lateral ul li {
-    margin-right: 10px;
+    margin-right: 20px;
     align-items: center;
     text-align: center;
+ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    
   }
 
   .menu-lateral ul li img {
     width: 40px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5px;
+    
     align-items: center;
     align-self: center;
   }
 
-  .menu-lateral .logo {
+   .logo {
     width: 80px;
   }
 
@@ -211,7 +218,7 @@ a {
     position: absolute;
     top: 140px;
     right: 20px;
-    width: 350px;
+    width: 370px;
   }
 
   .table-naves h5 {

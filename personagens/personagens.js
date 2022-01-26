@@ -1,12 +1,8 @@
-
-
 function swapiGet(param) {
   return axios.get(`https://swapi.dev/api/${param}`);
 }
 
-
 preencherTabelaPersonagens();
-
 
 //async await: so uma requisiçao - PERSONAGENS
 async function preencherTabelaPersonagens() {
@@ -25,7 +21,3 @@ async function preencherTabelaPersonagens() {
     </tr>`);
   });
 }
-
-
-
-

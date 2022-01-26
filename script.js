@@ -12,40 +12,6 @@ function swapiGet(param) {
 preencherContadores();
 preencherTabela();
 
-//grafico
-// google.charts.load("current", { packages: ["corechart"] });
-// google.charts.setOnLoadCallback(desenharGrafico);
-
-// async function desenharGrafico() {
-//   const response = await swapiGet("films/");
-//   console.log(response)
-
-//   const veiculosArray = response.data.results;
-//   console.log(veiculosArray)
-  
-//   const dataArray = [];
-//   dataArray.push(["Veículos", "Passageiros"]);
-//   veiculosArray.forEach((veiculo) => {
-//     dataArray.push([veiculo.name, Number(veiculo.passengers)]);
-//   });
-
-//   var data = google.visualization.arrayToDataTable(dataArray);
-
-//   var options = {
-//     title: "Passageiros por Veiculos",
-//     pieHole: 0.4,
-//     legend: 'none'
-    
-//   };
-
-//   var chart = new google.visualization.PieChart(
-//     document.getElementById("donutchart")
-//   );
-//   chart.draw(data, options);
-// }
-
-
-
 //promises: varias requisiçoes ao mesmo tempo, esperar todas para mostrar o resultado
 function preencherContadores() {
   // personagensContador.innerHTML = swapiGet('people/')
@@ -55,9 +21,8 @@ function preencherContadores() {
     swapiGet("species/"),
     swapiGet("starships/"),
     swapiGet("vehicles/"),
-    swapiGet("planets/")
+    swapiGet("planets/"),
   ]).then((results) => {
-    
     personagensContador.innerHTML = results[0].data.count;
     especiesContador.innerHTML = results[1].data.count;
     navesContador.innerHTML = results[2].data.count;

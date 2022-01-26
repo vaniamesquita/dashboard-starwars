@@ -16,7 +16,6 @@ a {
   text-align: center;
 }
 
-
 .container {
   display: flex;
 }
@@ -25,26 +24,21 @@ a {
   position: relative;
   width: 100%;
   z-index: 99;
-
-  
 }
 
 .header-especies:before {
-  content: ' ';
+  content: " ";
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("/assets/banner-personagens.jpeg") ;
+  background-image: url("/assets/banner-personagens.jpeg");
   background-size: cover;
   opacity: 0.6;
-
 }
 
-
 .menu-inferior {
-  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,10 +46,6 @@ a {
   position: absolute;
   top: 20%;
   left: auto;
-  
- 
-  
-  
 }
 
 .menu-lateral {
@@ -87,8 +77,6 @@ a {
 /* personagens */
 
 .table-especies {
-
-  
   width: 1200px;
 
   background-color: #fff;
@@ -98,7 +86,6 @@ a {
 
   max-width: 1200px;
   /* min-width: 300px; */
- 
 }
 
 .table-especies h5 {
@@ -128,51 +115,41 @@ a {
   padding: 10px 0;
 }
 
-
-
 /* responsividade */
 
 @media (min-width: 500px) {
   .texto-aviso {
     display: none;
   }
-
 }
 
-@media (max-width: 480px)
-{
-
+@media (max-width: 480px) {
   .body {
     position: relative;
     width: 100%;
     z-index: 99;
-  
-    
   }
-  
+
   body:before {
-    content: ' ';
+    content: " ";
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    background-image: url("/assets/banner-personagens.jpeg") ;
+    background-image: url("/assets/banner-personagens.jpeg");
     background-size: cover;
     opacity: 0.6;
-  
   }
 
   .container {
     display: flex;
-    
-  
-   
   }
 
   .menu-items {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .menu-items ul {
@@ -198,29 +175,33 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
   }
 
   .menu-lateral ul li {
-    margin-right: 10px;
+    margin-right: 20px;
     align-items: center;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
   }
 
   .menu-lateral ul li img {
     width: 40px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5px;
+
     align-items: center;
     align-self: center;
   }
 
-  .menu-lateral .logo {
+  .logo {
     width: 80px;
   }
 
-  .table-especies{
+  .table-especies {
     font-size: 12px;
     background-color: #fff;
     padding: 20px;
@@ -228,16 +209,15 @@ a {
     border-radius: 16px;
   }
 
-.menu-inferior {
-     display: flex;
-     position: absolute;
-     top: 160px;
-     right: 20px;
-     width: 350px;
+  .menu-inferior {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    width: 370px;
+  }
 
-   }
-
-.table-especies h5 {
+  .table-especies h5 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
@@ -247,24 +227,23 @@ a {
     font-size: 12px;
   }
 
-   .table-especies th:nth-child(n+4):nth-child(-n+6), .table-especies td:nth-child(n+4):nth-child(-n+6) {
-     display: none;
-    
-   }
+  .table-especies th:nth-child(n + 4):nth-child(-n + 6),
+  .table-especies td:nth-child(n + 4):nth-child(-n + 6) {
+    display: none;
+  }
 
-    .header-especies {
+  .header-especies {
     width: 0;
   }
-  
+
   .texto-aviso {
     font-size: 14px;
-    
+
     color: #fff;
     position: fixed;
     top: 90%;
     text-align: center;
     font-style: italic;
     margin: 0 15px;
-
   }
 }

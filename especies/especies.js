@@ -11,7 +11,6 @@ function swapiGet(param) {
 preencherContadores();
 preencherTabelaEspecies();
 
-
 //promises: varias requisiçoes ao mesmo tempo, esperar todas para mostrar o resultado
 function preencherContadores() {
   // personagensContador.innerHTML = swapiGet('people/')
@@ -29,13 +28,12 @@ function preencherContadores() {
   });
 }
 
-
 //async await: so uma requisiçao - Espécies
 async function preencherTabelaEspecies() {
   const response = await swapiGet("species/");
   const tableData = response.data.results;
 
-  console.log("--->",tableData)
+  console.log("--->", tableData);
 
   tableData.forEach((species) => {
     $("#especieTable").append(`<tr>
@@ -48,13 +46,7 @@ async function preencherTabelaEspecies() {
         
         
     </tr>`);
-    
   });
 }
 
-
 //especies
-
-
-
-
