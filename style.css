@@ -236,7 +236,7 @@ a {
     justify-content: space-evenly;
     background-color: white;
     z-index: 199;
-    position: fixed;
+    
   }
 
   .menu-items p {
