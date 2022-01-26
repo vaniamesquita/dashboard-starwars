@@ -20,6 +20,8 @@ async function preencherTabelaPersonagens() {
         <td>${people.birth_year}</td>
         <td>${people.hair_color}</td>    
         <td>${people.eye_color}</td>    
+        <td>${people.mass} kg</td>    
+        <td>${people.height} cm</td>    
     </tr>`);
   });
 }

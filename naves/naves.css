@@ -20,13 +20,13 @@ a {
   display: flex;
 }
 
-.header-personagens {
+.header-naves {
   position: relative;
   width: 100%;
   z-index: 99;
 }
 
-.header-personagens:before {
+.header-naves:before {
   content: " ";
   left: 0;
   top: 0;
@@ -76,7 +76,7 @@ a {
 
 /* personagens */
 
-.table-personagens {
+.table-naves {
   width: 1200px;
 
   background-color: #fff;
@@ -88,29 +88,29 @@ a {
   /* min-width: 300px; */
 }
 
-.table-personagens h5 {
+.table-naves h5 {
   font-weight: bold;
   font-size: 35px;
   margin-bottom: 10px;
 }
 
-.table-personagens p {
+.table-naves p {
   font-size: 1.1rem;
 }
 
-.table-personagens table {
+.table-naves table {
   margin-top: 30px;
   width: 100%;
   text-align: center;
 }
 
-.table-personagens table th {
+.table-naves table th {
   font-size: 1.2rem;
 
   border-bottom: 1px solid #5e5e5e;
 }
 
-.table-personagens table td {
+.table-naves table td {
   border-bottom: 1px solid #e9e9e9;
   padding: 10px 0;
 }
@@ -198,7 +198,7 @@ a {
     width: 80px;
   }
 
-  .table-personagens {
+  .table-naves {
     font-size: 12px;
     background-color: #fff;
     padding: 20px;
@@ -209,27 +209,27 @@ a {
   .menu-inferior {
     display: flex;
     position: absolute;
-    top: 160px;
+    top: 140px;
     right: 20px;
     width: 350px;
   }
 
-  .table-personagens h5 {
+  .table-naves h5 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  .table-personagens p {
+  .table-naves p {
     font-size: 12px;
   }
 
-  .table-personagens th:nth-child(n + 4):nth-child(-n + 7),
-  .table-personagens td:nth-child(n + 4):nth-child(-n + 7) {
+  .table-naves th:nth-child(n + 4):nth-child(-n + 7),
+  .table-naves td:nth-child(n + 4):nth-child(-n + 7) {
     display: none;
   }
 
-  .header-personagens {
+  .header-naves {
     width: 0;
   }
 
@@ -238,10 +238,9 @@ a {
 
     color: #fff;
     position: fixed;
-    top: 90%;
+    top: 94%;
     text-align: center;
     font-style: italic;
     margin: 0 15px;
   }
-  
 }
