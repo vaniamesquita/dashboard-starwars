@@ -9,8 +9,7 @@ function swapiGet(param) {
   return axios.get(`https://swapi.dev/api/${param}`);
 }
 
-preencherContadores();
-preencherTabela();
+
 
 //promises: varias requisiçoes ao mesmo tempo, esperar todas para mostrar o resultado
 function preencherContadores() {
@@ -35,14 +34,22 @@ function preencherContadores() {
 async function preencherTabela() {
   const response = await swapiGet("films/");
   const tableData = response.data.results;
+  console.log(tableData)
 
   tableData.forEach((film) => {
     $("#filmsTable").append(`<tr>
         <td>${film.title}</td>
         <td>${moment(film.release_date).format("DD/MM/YYYY")}</td>
         <td>${film.director}</td>
-        <td>${film.producer}</td>
         <td>${film.episode_id}</td>    
+        <td>${film.characters.length}</td>    
+        <td>${film.species.length}</td>    
+        <td>${film.starships.length}</td>    
+        <td>${film.vehicles.length}</td>    
     </tr>`);
   });
 }
+
+
+preencherContadores();
+preencherTabela();
