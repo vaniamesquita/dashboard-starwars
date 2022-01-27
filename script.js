@@ -34,7 +34,7 @@ function preencherContadores() {
 async function preencherTabela() {
   const response = await swapiGet("films/");
   const tableData = response.data.results;
-  console.log(tableData)
+  
 
   tableData.forEach((film) => {
     $("#filmsTable").append(`<tr>

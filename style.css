@@ -368,23 +368,12 @@ a {
   }
 
   .table p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .table th:nth-child(n + 4):nth-child(-n + 8),
   .table td:nth-child(n + 4):nth-child(-n + 8) {
     display: none;
-  }
-
-  .texto-aviso {
-    font-size: 14px;
-
-    color: #fff;
-    position: fixed;
-    top: 93%;
-    text-align: center;
-    font-style: italic;
-    margin: 0 15px;
   }
 
   .card {
@@ -406,8 +395,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
 
     position: relative;
 

@@ -180,19 +180,25 @@ a {
   }
 }
 
-@media (max-width: 500px) {
-  body {
+@media (max-width: 480px) {
+  .body {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+  }
+
+  body:before {
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     background-image: url("/assets/banner-personagens.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    opacity: 0.6;
   }
 
-  .header-especies {
-    height: 100vh;
-    background: none;
-
-    width: 0;
-  }
 
   .menu-items {
     display: flex;
@@ -211,7 +217,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: white;
-    z-index: 199;
+    z-index: 99;
   }
 
   .menu-items p {
@@ -241,25 +247,26 @@ a {
 
   .table-especies {
     font-size: 12px;
-    margin-left: 18px;
+    
+    padding: 20px;
   }
 
   .menu-inferior {
     display: flex;
     position: absolute;
-    top: 160px;
+    top: 140px;
     right: 20px;
     width: 370px;
   }
 
   .table-especies h5 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 35px;
     margin-bottom: 10px;
   }
 
   .table-especies p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .table-especies th:nth-child(n + 4):nth-child(-n + 6),
