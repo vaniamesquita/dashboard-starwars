@@ -180,7 +180,7 @@ a {
 
 /* responsividade */
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (orientation: landscape){
   
 
   .menu-lateral {
@@ -275,7 +275,7 @@ a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .body {
     position: relative;
     width: 100%;

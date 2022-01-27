@@ -42,7 +42,7 @@ async function preencherTabelaEspecies() {
         <td>${species.classification}</td>
         <td>${species.designation}</td>
         <td>${species.average_height}</td>    
-        <td>${species.average_lifespan}</td>   
+        <td>${species.average_lifespan} anos</td>   
         
         
     </tr>`);

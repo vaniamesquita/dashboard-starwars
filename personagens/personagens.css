@@ -33,7 +33,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("/assets/banner-personagens.jpeg");
+  background-image: url("/assets/banner-personagens.jpg");
   background-size: cover;
   opacity: 0.6;
 }
@@ -117,35 +117,86 @@ a {
 
 /* responsividade */
 
-@media (min-width: 500px) {
-  .texto-aviso {
-    display: none;
+@media (max-width: 900px) and (orientation: landscape) {
+  body {
+    background-image: url("/assets/banner-personagens.jpg");
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-inferior {
+    top: 10%;
+  }
+
+  .menu-lateral {
+    width: 100px;
+    height: 700px;
+
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .menu-lateral ul li {
+    margin: 15px 0;
+    font-size: 12px;
+  }
+
+  .menu-lateral ul li img {
+    width: 40px;
+  }
+
+  .table-personagens {
+    width: 95%;
+    height: 100%;
+
+    padding: 30px;
+  }
+
+  .table-personagens h5 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .table-personagens table {
+    margin-top: 25px;
+  }
+
+  .table-personagens table th {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .table-personagens table td {
+    padding: 10px 0;
+  }
+
+  .table-personagens table tr {
+    font-size: 14px;
   }
 }
 
-@media (max-width: 480px) {
-  .body {
-    position: relative;
-    width: 100%;
-    z-index: 99;
+@media (max-width: 500px) {
+  body {
+    background-image: url("/assets/banner-personagens.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  body:before {
-    content: " ";
-    left: 0;
-    top: 0;
-    width: 100vw;
+  .header-personagens {
     height: 100vh;
-    position: absolute;
-    background-image: url("/assets/banner-personagens.jpeg");
-    background-size: cover;
-    opacity: 0.6;
+    background: none;
+
+    width: 0;
   }
 
   .menu-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .menu-items ul {
@@ -160,7 +211,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: white;
-    z-index: 99;
+    z-index: 199;
   }
 
   .menu-items p {
@@ -175,22 +226,13 @@ a {
 
   .menu-lateral ul li {
     margin-right: 20px;
-    align-items: center;
-    text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 10px;
   }
 
   .menu-lateral ul li img {
     width: 40px;
     display: flex;
-    justify-content: space-evenly;
-
-    align-items: center;
-    align-self: center;
   }
 
   .logo {
@@ -199,10 +241,8 @@ a {
 
   .table-personagens {
     font-size: 12px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
+
+    margin-left: 18px;
   }
 
   .menu-inferior {
@@ -230,16 +270,5 @@ a {
 
   .header-personagens {
     width: 0;
-  }
-
-  .texto-aviso {
-    font-size: 14px;
-
-    color: #fff;
-    position: fixed;
-    top: 90%;
-    text-align: center;
-    font-style: italic;
-    margin: 0 15px;
   }
 }
