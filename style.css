@@ -157,6 +157,7 @@ a {
 .table table {
   margin-top: 30px;
   width: 100%;
+  text-align: center;
 }
 
 .table table th {
