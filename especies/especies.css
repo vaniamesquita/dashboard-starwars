@@ -180,7 +180,7 @@ a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .body {
     position: relative;
     width: 100%;
