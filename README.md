@@ -1,5 +1,5 @@
 # Dashboard StarWars
-Desenvolvido utilizando a API [SWAPI - The Star Wars API](https://swapi.dev//). 
+
 
 
 ### <p align="center"> [Sobre](#sobre) | [Layout](#layout) | [Tecnologias Utilizadas](#tecnologias-utilizadas) </p>
@@ -7,6 +7,7 @@ Desenvolvido utilizando a API [SWAPI - The Star Wars API](https://swapi.dev//).
 
 ## Sobre 
 
+Desenvolvido utilizando a API [SWAPI - The Star Wars API](https://swapi.dev//). 
 Esse site foi desenvolvido com a intenção de praticar a requisição de APIs externas, e também pq sou fã da série (:
 
 
@@ -34,14 +35,17 @@ Você pode acessar o projeto clicando <a href="https://dash-starwars.netlify.app
 
 <table align="center">
    <tr>
-    <td valign="top"><img src="/assets/preview-mobile.gif" height="500"> </td>
+    <td valign="top"><img src="/assets/preview-mobile.gif" height="500"> 
+     </td>
   </tr>
  </table>
  <br>
+ 
+ #### <p align="center">Landscape</p>
 
  <table align="center">
    <tr>
-    <td valign="top"><img src="/assets/preview-landscape.gif" height="500"> </td>
+    <td valign="top"><img src="/assets/preview-landscape.gif" width="500px"> </td>
   </tr>
  </table>
  <br>
